@@ -509,7 +509,7 @@ Kafka 的 leader 机器宕机了，此时其他的 follower 刚好还有些数�
 所以此时一般是要求起码设置如下 4 个参数：
 - 给 topic 设置 `replication.factor` 参数：这个值必须大于 1，要求每个 partition 必须有至少 2 个副本。
 - 在 Kafka 服务端设置 `min.insync.replicas` 参数：这个值必须大于 1，这个是要求一个 leader 至少感知到有至少一个 follower 还跟自己保持联系，没掉队，这样才能确保 leader 挂了还有一个 follower 吧。
-- 在 producer 端设置 `acks=all`：这个是要求每条数据，必须是写入所有 replica 之后，才能认为是写成功了。
+- 在 producer 端设置 `acks=all`：这个是要求每条数据，必须是写入所有 ISR 之后，才能认为是写成功了。
 - 在 producer 端设置 `retries=MAX`(很大很大很大的一个值，无限次重试的意思)：这个是要求一旦写入失败，就无限重试，卡在这里了。
 
 ## <a name="46">与ZooKeeper的依赖</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
