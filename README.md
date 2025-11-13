@@ -16,7 +16,7 @@ BTW：强烈大家注册一个ChatGPT，可以用来完善面试题。
 - [Java集合类](/src/main/java/com/toc/COLLECTION.md)
 - [Java IO](/src/main/java/com/toc/JAVA_IO.md)
 - [Java虚拟机](/src/main/java/com/toc/JVM.md)
-- [JAVA 线上问题排查](/src/main/java/com/toc/JAVA 线上排查思路.md)
+- [JAVA 线上问题排查](/src/main/java/com/toc/JAVA线上排查思路)
 - [Java 单元测试](/src/main/java/com/toc/UNIT_TEST.md)
 - [Netty](/src/main/java/com/toc/NETTY.md)
 - [MyBatis](/src/main/java/com/toc/MYBATIS.md)
