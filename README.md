@@ -1,3 +1,4 @@
+# 本仓库内容已经基本废弃，利用好AI工具，提升面试效率
 # learning-note
 > repository相关的markdown的目录，在`com`目录下使用命令`python TOC-new.py all`生成，`toc`文件夹为带目录的MD文件
 
